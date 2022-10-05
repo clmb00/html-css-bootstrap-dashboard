@@ -71,7 +71,11 @@ main table tbody td:first-child, main table thead th:first-child{
 }
 
 main table tbody td:not(:first-child), table thead th:not(:first-child){
-  width: 120px;
+  width: 108px;
+}
+
+main table tbody td:nth-child(3), table thead th:nth-child(3){
+  width: 80px;
 }
 
 main table tbody td:first-child:before{
@@ -99,5 +103,23 @@ main table tbody td:first-child:before{
 
   aside div i{
     font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px){
+  main table thead th:nth-child(2),
+  main table tbody td:nth-child(2){
+    display: none;
+  }
+}
+
+@media (max-width: 575px){
+  aside div i{
+    font-size: 1rem;
+  }
+
+  main table thead th:nth-child(3),
+  main table tbody td:nth-child(3){
+    display: none;
   }
 }
