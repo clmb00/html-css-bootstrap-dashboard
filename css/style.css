@@ -1,22 +1,49 @@
 /* debug */
-[class^=col]{
+/* [class^=col]{
   border: 1px solid red;
+} */
+
+:root{
+  --header_height: 70px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
 header{
   background-color: white;
-  height: 70px;
+  height: var(--header_height);
+}
+
+header .input-group > .input-group-text.my_input_text{
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+  padding-right: .2rem;
+  padding-left: .4rem;
+}
+
+header .input-group > .form-control.my_search_bar{
+  background-color: #E5E5E5;
+  border-color: #E5E5E5;
+  box-shadow: none;
+}
+
+header .my_dropdown_menu.dropdown-menu[data-bs-popper]{
+  left: unset;
+  right: 0;
 }
 
 aside{
-  height: calc(100vh - 70px);
+  font-family: 'Poppins', sans-serif;
+  height: calc(100vh - var(--header_height));
 
   /* debug */
   background-color: darkblue;
 }
 
 main{
-  max-height: calc(100vh - 70px);
+  max-height: calc(100vh - var(--header_height));
   overflow: auto;
 
   /* debug */
