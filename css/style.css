@@ -11,6 +11,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.badge.my_badge:hover{
+  filter: brightness(.9);
+}
+
 header{
   background-color: white;
   height: var(--header_height);
@@ -50,6 +54,15 @@ aside div a{
 
 aside div:last-of-type{
   margin-top: auto;
+}
+
+aside div:hover{
+  background-color: #27343f;
+  border-radius: 18px;
+}
+
+aside div:active{
+  background-color: #4e687e;
 }
 
 main{
