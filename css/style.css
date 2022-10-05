@@ -97,6 +97,10 @@ main table tbody td:first-child:before{
 }
 
 @media (max-width: 991px){
+  header nav div a img:last-child{
+    width: 50px;
+  }
+
   aside div span{
     display: none;
   }
