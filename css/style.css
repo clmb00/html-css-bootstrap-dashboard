@@ -55,11 +55,18 @@ aside div:last-of-type{
 main{
   max-height: calc(100vh - var(--header_height));
   overflow: auto;
-
-  /* debug */
-  background-color: green;
 }
 
+main #bar_left .badge.my_badge{
+  background-color: #155CBA;
+}
+
+main #bar_right p.my_p{
+  font-size: .9rem;
+  margin-bottom: 0.3rem;
+}
+
+/* media */
 @media (max-width: 1400px){
   aside div span{
     display: block;
