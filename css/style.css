@@ -1,0 +1,24 @@
+/* debug */
+[class^=col]{
+  border: 1px solid red;
+}
+
+header{
+  background-color: white;
+  height: 70px;
+}
+
+aside{
+  height: calc(100vh - 70px);
+
+  /* debug */
+  background-color: darkblue;
+}
+
+main{
+  max-height: calc(100vh - 70px);
+  overflow: auto;
+
+  /* debug */
+  background-color: green;
+}
