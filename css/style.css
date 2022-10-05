@@ -66,6 +66,25 @@ main #bar_right p.my_p{
   margin-bottom: 0.3rem;
 }
 
+main table tbody td:first-child, main table thead th:first-child{
+  text-align: left;
+}
+
+main table tbody td:not(:first-child), table thead th:not(:first-child){
+  width: 120px;
+}
+
+main table tbody td:first-child:before{
+  background-image: url(../img/class-avatar.png);
+  background-size: 30px;
+  display: inline-block;
+  width: 30px; 
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+  content:"";
+}
+
 /* media */
 @media (max-width: 1400px){
   aside div span{
