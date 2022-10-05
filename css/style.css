@@ -37,9 +37,19 @@ header .my_dropdown_menu.dropdown-menu[data-bs-popper]{
 aside{
   font-family: 'Poppins', sans-serif;
   height: calc(100vh - var(--header_height));
+  background-color: #051E34;
+  background-image: url(../img/sidebar-bg.png);
+}
 
-  /* debug */
-  background-color: darkblue;
+aside div a{
+  display: block;
+  font-size: 1.1rem;
+  padding: .8rem 0rem;
+  text-decoration: none;
+}
+
+aside div:last-of-type{
+  margin-top: auto;
 }
 
 main{
@@ -48,4 +58,20 @@ main{
 
   /* debug */
   background-color: green;
+}
+
+@media (max-width: 1400px){
+  aside div span{
+    display: block;
+  }
+}
+
+@media (max-width: 991px){
+  aside div span{
+    display: none;
+  }
+
+  aside div i{
+    font-size: 1.4rem;
+  }
 }
