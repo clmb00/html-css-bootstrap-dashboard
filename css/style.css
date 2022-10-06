@@ -133,6 +133,10 @@ main table tbody td:first-child:before{
 }
 
 @media (max-width: 767px){
+  main .offcanvas.offcanvas-end.my_offcanvas{
+    width: 100vw;
+  }  
+
   main table thead th:nth-child(2),
   main table tbody td:nth-child(2){
     display: none;
