@@ -79,6 +79,15 @@ main #bar_right p.my_p{
   margin-bottom: 0.3rem;
 }
 
+main #prossime_classi .my_button_card{
+  top: 8px;
+  right: 16px;
+}
+
+main .offcanvas.offcanvas-end.my_offcanvas{
+  width: 60vw;
+}
+
 main table tbody td:first-child, main table thead th:first-child{
   text-align: left;
 }
